@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200321195250_AdicionandoConstraint.cs" />
+    <Compile Remove="Migrations\20200321195250_AdicionandoConstraint.Designer.cs" />
+    <Compile Remove="Migrations\20200321195558_AdicionandoConstraint2.cs" />
+    <Compile Remove="Migrations\20200321195558_AdicionandoConstraint2.Designer.cs" />
+    <Compile Remove="Migrations\20200321195826_AdicionandoConstraint3.cs" />
+    <Compile Remove="Migrations\20200321195826_AdicionandoConstraint3.Designer.cs" />
+    <Compile Remove="Migrations\20200321195917_AdicionandoConstraint4.cs" />
+    <Compile Remove="Migrations\20200321195917_AdicionandoConstraint4.Designer.cs" />
+    <Compile Remove="Migrations\20200321200409_AdicionandoConstraint5.cs" />
+    <Compile Remove="Migrations\20200321200409_AdicionandoConstraint5.Designer.cs" />
+    <Compile Remove="Migrations\20200321200542_AdicionandoConstraint6.cs" />
+    <Compile Remove="Migrations\20200321200542_AdicionandoConstraint6.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RecargaApp.Domain\RecargaApp.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
