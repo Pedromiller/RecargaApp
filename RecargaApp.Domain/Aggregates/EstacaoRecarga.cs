@@ -6,11 +6,19 @@ using System.Text;
 namespace RecargaApp.Domain.Aggregates
 {
     public class EstacaoRecarga : Entity, IAggregateRoot
-    {        
-        public string Nome { get; set; }
-        public string Tipo { get; set; }
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
+    {
+        public EstacaoRecarga(string nome, string tipo, double latitude, double longitude)
+        {
+            Nome = nome;
+            Tipo = tipo;
+            Latitude = latitude;
+            Longitude = longitude;    
+        }
+
+        public string Nome { get; private set; }
+        public string Tipo { get; private set; }
+        public double Latitude { get; private set; }
+        public double Longitude { get; private set; }
 
     }
 }

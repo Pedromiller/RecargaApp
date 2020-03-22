@@ -11,11 +11,10 @@ namespace RecargaApp.Application.AutoMapper
     {
         public ViewModelToDomainMappingProfile()
         {
+
             CreateMap<EstacaoRecargaViewModel, EstacaoRecarga>()
-                .ForMember(o => o.Nome, d => d.MapFrom(c => c.Nome))
-                .ForMember(o => o.Tipo, d => d.MapFrom(c => c.Tipo))
-                .ForMember(o => o.Latitude, d => d.MapFrom(c => c.Latitude))
-                .ForMember(o => o.Longitude, d => d.MapFrom(c => c.Longitude));
+                .ConstructUsing(c => new EstacaoRecarga(c.Nome, c.Tipo, c.Latitude, c.Longitude));
+    
         }
        
     }
